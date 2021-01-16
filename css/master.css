@@ -13,11 +13,17 @@ body{
 
 
 .title{
+  padding: 15px;
   font-size: 41px;
+  text-align: center;
+}
+
+.navigation{
+  margin-top: 40px;
 }
 
 .navigation ul{
-  text-align: right;
+  text-align: center;
   font-size: 20px;
 }
 a{
@@ -34,24 +40,32 @@ li{
   padding-right: 10%;
 }
 li:last-of-type{
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
-img{
+.image{
+  justify-content: center;
   max-width: 100%;
   height: auto;
 }
 
 section{
   margin-top: 40px;
+  min-height: calc(100vh - 70px);
 }
 
 .main p{
-  background-color: red;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 28px;
   text-align: center;
+}
+
+footer{
+  display: inline-block;
+  width: 100%;
+  background-color: #111;
+  padding-bottom: 15px;
 }
 
 .row::after {
@@ -81,6 +95,7 @@ section{
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+
 }
 
 @media only screen and (min-width:768px)
@@ -97,4 +112,11 @@ section{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .navigation ul{
+    text-align: right;
+  }
+  .title{
+    font-size: 41px;
+    text-align: left;
+  }
 }
