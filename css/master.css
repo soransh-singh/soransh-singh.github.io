@@ -36,7 +36,7 @@ body{
 
 .center{
     position: relative;
-    top: 40%;
+    top: 20%;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -82,4 +82,10 @@ p,a{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .center{
+    position: relative;
+    top: 40%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
