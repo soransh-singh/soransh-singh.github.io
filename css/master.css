@@ -36,8 +36,7 @@ body{
 
 .center{
     position: relative;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding : 10%;
 }
 
 h1{
