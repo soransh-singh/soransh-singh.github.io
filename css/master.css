@@ -1,72 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lemonada:wght@500&display=swap');
 * {
   box-sizing: border-box;
 }
 
 html{
-  font-family: sans-serif;
-  color: #ffffff;
+  font-family: 'Kaushan Script', cursive;
+  font-stretch: semi-expanded;
+  color: #000;
 }
 
 body{
-  background-color: #313132;
+  background-color: #eee;
 }
 
+.main{
+  position: absolute;
+  display: block;
+  height: 100%;
+}
 
-.title{
-  padding: 15px;
-  font-size: 41px;
+.left, .right {
+  position: relative;
   text-align: center;
+  padding: 40px;
+  height: 100%;
 }
 
-.navigation{
-  margin-top: 40px;
+.left{
+
 }
 
-.navigation ul{
-  text-align: center;
+.right{
+  background-color: #f0a8aa;
+}
+
+.center{
+    position: relative;
+    top: 40%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1{
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+p,a{
+  display: inherit;
+  font-family: 'Lemonada', cursive;
+  color: #000;
   font-size: 20px;
-}
-a{
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover{
-  text-decoration: underline;
-}
-
-li{
-  display: inline;
   padding-right: 10%;
-}
-li:last-of-type{
-  padding-right: 15px;
-}
-
-.image{
-  justify-content: center;
-  max-width: 100%;
-  height: auto;
-}
-
-section{
-  margin-top: 40px;
-  min-height: calc(100vh - 70px);
-}
-
-.main p{
   padding-left: 10%;
-  padding-right: 10%;
-  font-size: 28px;
-  text-align: center;
 }
 
-footer{
-  display: inline-block;
-  width: 100%;
-  background-color: #111;
-  padding-bottom: 15px;
-}
 
 .row::after {
   content: "";
@@ -79,23 +66,6 @@ footer{
   padding: 15px;
   float: left;
   width: 100%;
-}
-
-@media only screen and (min-width:600px)
-{/* for tablet */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-
 }
 
 @media only screen and (min-width:768px)
@@ -112,11 +82,4 @@ footer{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-  .navigation ul{
-    text-align: right;
-  }
-  .title{
-    font-size: 41px;
-    text-align: left;
-  }
 }
