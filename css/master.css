@@ -3,9 +3,13 @@
   box-sizing: border-box;
 }
 
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
 html{
   font-family: 'Kaushan Script', cursive;
-  font-stretch: semi-expanded;
   color: #000;
 }
 
@@ -14,13 +18,15 @@ body{
 }
 
 .main{
-  position: absolute;
-  display: block;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100vh 100vh;
+
 }
 
 .left, .right {
-  position: relative;
+  display: grid;
+  place-items:center;
   text-align: center;
   padding: 40px;
   height: 100vh;
@@ -35,14 +41,17 @@ body{
   background-color: #f0a8aa;
 }
 
-.center{
-  padding-top: 30vh;
+.links{
+  width: 80%;
 }
+
+
 
 h1{
   font-size: 40px;
   padding-bottom: 30px;
 }
+
 p,a{
   display: inherit;
   font-family: 'Lemonada', cursive;
@@ -52,32 +61,12 @@ p,a{
   padding-left: 10%;
 }
 
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-[class*="col-"]{
-  padding: 15px;
-  float: left;
-  width: 100%;
-}
-
 @media only screen and (min-width:768px)
 {/* for desktop */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+  .main{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
+
+  }
+
 }
