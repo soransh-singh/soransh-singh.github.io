@@ -1,26 +1,152 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="css\master.css">
+
     <meta charset="utf-8" name="viewport" content="width=device-width,initial=scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Palette+Mosaic&family=Yatra+One&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/profile.jpg">
+
+    <link rel="stylesheet" href="./css/master.css">
+
+    <script src="./js/main.js"></script>
     <title>Soransh Singh</title>
   </head>
   <body>
-    <div class="main" >
-      <div class="left">
-          <div class="center">
-            <h1>Hello there ! I'm Soransh Singh </h1>
-            <p>I am a student at the Ram Lal Anand College of Delhi University, pursuing graduation.
-              I have keen interest in sketching and illustration on my free time and have a passion for Web Development. </p>
-          </div>
+    <header>
+      <ul class="header__list">
+        <li class="list__item"><a href="#" class="list__link">projects</a></li>
+        <li class="list__item"><a href="#" class="list__link">About</a></li>
+        <li class="list__item"><a href="#" class="list__link">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__intro">
+          <img src="./assets/me.jpg" alt="soransh" class="hero__img">
+          <h1 class="hero__name">Soransh Singh</h1>
         </div>
-        <div class="right">
-          <div class="center links"> 
- <a href="https://github.com/soransh-singh">My Projects</a><br>
-              <a href="#">Things I have drawn</a><br>
-              <a href="https://soransh-singh.itch.io/">my itch account</a><br>
+        <p class="hero__content">I'm a Web Developer and a Programming enthusiast.
+          Motivated to develop
+          professionally and ready to accept new challenges</p>
+
+      </section>
+
+      <section class="projects">
+        <h2 class="projects__heading">Projects</h2>
+        <div class="project__sec">
+          <div class="project__card">
+            <img src="./assets/calculator-preview.jpg" alt="" class="project__image">
+            <div class="project__content">
+              <h3 class="project__name">Calculator</h3>
+              <p class="project__description">
+                This calculator app will be a great test of your CSS and JS skills
+                especially. If you're wanting to practice using Grid, this challenge will be perfect for you!
+              </p>
+              <div class="project__link">
+                <a href="" class="project__live-site">live preview</a>
+                <a href="" class="project__code">code</a>
+              </div>
+            </div>
           </div>
+
+          <div class="project__card">
+            <img src="./assets/insure-preview.jpg" alt="" class="project__image">
+            <div class="project__content">
+              <h3 class="project__name">Insure Landing Page</h3>
+              <p class="project__description">
+                Test your layout skills with this HTML & CSS only landing page. This challenge
+                is perfect if you're starting to get confident in laying out web pages.
+              </p>
+              <div class="project__link">
+                <a href="" class="project__live-site">live preview</a>
+                <a href="" class="project__code">code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__card">
+            <img src="./assets/loopStudio-preview.jpg" alt="" class="project__image">
+            <div class="project__content">
+              <h3 class="project__name">loopStudio Landing Page</h3>
+              <p class="project__description">
+                This challenge is perfect if you're looking to test your CSS Grid chops.
+                Even without Grid, this project will be a fun one to help you practice your layout skills!
+              </p>
+              <div class="project__link">
+                <a href="" class="project__live-site">live preview</a>
+                <a href="" class="project__code">code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__card">
+            <img src="./assets/socialMedia-preview.jpg" alt="" class="project__image">
+            <div class="project__content">
+              <h3 class="project__name">Social Media Dashboard</h3>
+              <p class="project__description">
+                This challenge will be a perfect chance to practice your Grid
+                skills. The color theme switcher also adds a nice additional test.
+              </p>
+              <div class="project__link">
+                <a href="" class="project__live-site">live preview</a>
+                <a href="" class="project__code">code</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </div>
+      </section>
+      <section class="about">
+        <div class="about__block ">
+          <h2 class="about__heading">education and Training</h2>
+          <ul class="about__list">
+            <li class="about__list__item"> • Student at Delhi University</li>
+            <li class="about__list__item"><a href="https://www.coursera.org/account/accomplishments/verify/JTHU8HK4PXTL?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course"> • Web Application Technologies and Django(Coursera)</a></li>
+            <li class="about__list__item"><a href="https://freecodecamp.org/certification/soransh/responsive-web-design"> • Responsive Web Design(freecodecamp)</a></li>
+          </ul>
+        </div>
+
+        <div class="about__block">
+          <h2 class="about__heading">tools</h2>
+          <ul class="about__list">
+            <li class="about__list__item"> • ReactJS • Javascript</li>
+            <li class="about__list__item"> • CSS3 • sass </li>
+            <li class="about__list__item"> • Krita • Figma</li>
+            <li class="about__list__item"> • Python • Django</li>
+            <li class="about__list__item"> • C++ • Java</li>
+          </ul>
+        </div>
+
+        <div class="about__block">
+          <h2 class="about__heading">Currently</h2>
+          <ul class="about__list">
+            <li class="about__list__item"> • Learning ReactJS</li>
+            <li class="about__list__item"> • Reading <a href="">The Pragamatic programmer</a></li>
+          </ul>
+        </div>
+
+        <div class="about__block">
+          <h2 class="about__heading">interests</h2>
+          <ul class="about__list">
+            <li class="about__list__item"> • Frontend Development</li>
+            <li class="about__list__item"> • music and Reading Novels</li>
+            <li class="about__list__item"> • Sketching</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2 class="footer__heading">Get in Touch</h2>
+      <ul class="footer__list">
+        <li class="footer__list__item"><a href="#">Github </a></li>
+        <li class="footer__list__item"><a href="#">Linkedin</a></li>
+        <li class="footer__list__item"><a href="#">Twitter</a></li>
+        <li class="footer__list__item"><a href="#">Codepen</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
