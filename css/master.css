@@ -5,15 +5,19 @@
   --light-yellow: hsla(58, 89%, 93%, 1);
   --peach-puff: hsla(29, 97%, 86%, 1);
   --bittersweet: hsla(4, 82%, 67%, 1);
+  --red: hsla(355, 83%, 45%, 1);
+  scroll-behavior: smooth;
 }
 
 
 * {
   box-sizing: border-box;
+  cursor: default;
 }
 
 body{
   margin: 0;
+
   font-family: 'Open Sans', sans-serif;
   background-color: var(--bittersweet);
   text-align: center;
@@ -32,6 +36,8 @@ img{
 a{
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+
 }
 
 ul{
@@ -41,6 +47,7 @@ ul{
 }
 
 .header__list{
+  padding-top: 1rem;
   justify-content: space-around;
 }
 
@@ -48,6 +55,12 @@ ul{
   font-weight: 900;
   color: var(--light-yellow);
   text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.list__item:hover{
+  color: var(--red);
+  transform: scale(1.1);
 }
 
 
@@ -108,18 +121,22 @@ ul{
 
 .project__card{
   margin: 2rem 2rem;
-  /*  */
   border-radius: .5rem;
   max-width: 380px;
   background: white;
   color: var(--oxford-blue);
-  box-shadow: 0px 2px 5px -2px hsla(0, 0%, 90%, 0.5);
+  box-shadow: 0px 2px 5px -2px hsla(0, 0%, 90%, 0.9), inset -4px -4px 12px 2px var(--oxford-blue) ;
   transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
 }
 
+.project__card:hover{
+  box-shadow: 0px 2px 5px 2px hsla(0, 0%, 90%, 0.6);
+}
+
 .project__image{
+  padding: 1rem;
   border-radius: .5rem .5rem 0 0 ;
 }
 
@@ -230,5 +247,8 @@ footer{
   footer{
     max-width: 900px;
     margin: 2rem auto;
+  }
+  .footer__list__item + .footer__list__item{
+    padding-left: 2rem;
   }
 }
